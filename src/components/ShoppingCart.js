@@ -1,4 +1,5 @@
 import React from "react";
+import crazyFrog from '../assets/crazyFrog.jpeg'
 
 /********* DO NOT DO ANYTHING IN THIS COMPONENT *********/
 
@@ -8,7 +9,7 @@ export default function ShoppingCart(props) {
     <div className="cart">
       {props.cart.map((plant) => (
         <div className="plant-card" key={plant.id}>
-          <img className="plant-image" src={plant.img} alt={plant.name} />
+          <img className="plant-image" src={crazyFrog} alt={plant.name} />
           <div className="plant-details">
             <h2 className="plant-name">{plant.name}</h2>
             <p>${plant.price}</p>
